@@ -1,6 +1,6 @@
 body{
     background-color: #ffffff;
-    max-width: 1920px;
+    width: 100%;
     min-height: 2100px;
     font-family: 'Open Sans', sans-serif;
 }
@@ -27,6 +27,7 @@ a, a:hover{
     letter-spacing: .6px;
 }
 .wrapper_header{
+    width: 100%;
     z-index: 1;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     background-color: #FFFFFF;
@@ -55,6 +56,16 @@ a, a:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.burger{
+    overflow: hidden;
+}
+.burger_menu{
+    height: 0px;
+}
+.burger_menu p{
+    overflow: hidden;
+    height: 0;
 }
 .logo{
     margin-top: 4px;
@@ -120,13 +131,14 @@ a, a:hover{
     font-size: 14px;
     width: 145px;
     height: 44px;
-    margin-right: 8px;
+    margin-right: 5px;
 }
 .btn{
     width: 45px;
     border: none;
     background-color: #F2F2F2;
     font-size: 14px;
+    padding:  0 0 3px 3px;
 }
 .inform{
     margin: 44px auto 30px 19px;
@@ -288,12 +300,18 @@ a, a:hover{
 .buy_like{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 411px;
+    justify-content: space-between;
+    width: 408px;
+}
+.cart_like{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 251px;
 }
 .cart{
     letter-spacing: .6px;
-    padding: 0 27px 1px;
+    padding: 0 28px 1px;
 }
 .cart,.like{
     background-color: #333333;
@@ -302,7 +320,7 @@ a, a:hover{
     height: 44px;
 }
 .like img{
-    padding: 0 9px;
+    padding: 0 8px;
 }
 .grey_line{
     height: .5px;
@@ -346,7 +364,7 @@ a, a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 8px;
+    margin-top: 52px;
     margin-bottom: 30px;
 }
 .all_style{
@@ -488,7 +506,6 @@ a, a:hover{
 #form_email{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     border-bottom: 1px #C4C4C4 solid;
     margin-top: 43px;
     padding: 0px 23px 10px 15px;
@@ -593,6 +610,9 @@ a, a:hover{
     .wrapper_img{
         max-width: 686px;
     }
+    #form_email{
+        align-items: center;
+    }
 }
 @media(max-width:375px){
     html{
@@ -612,6 +632,27 @@ a, a:hover{
         min-width: 375px;
         min-height: 67px;
         margin: 0;
+        padding: 0 20px;
+    }
+    .logo{
+        margin-left: 0;
+        margin-bottom: 11px;
+    }
+    .header_button{
+        margin: 0;
+        justify-content: space-between;
+        align-items: center;
+        width: 168px;
+        margin-bottom: 8px;
+    }
+    .btn_header{
+        margin: 0;
+        margin-left: 4px;
+        transition: 2s transform;
+        -webkit-transition: 2s transform;
+        -moz-transition: 2s transform;
+        -ms-transition: 2s transform;
+        -o-transition: 2s transform;
     }
     .conteiner{
         max-width: 375px;
@@ -619,6 +660,7 @@ a, a:hover{
     }
     .wrapper_product{
         margin: 0;
+        padding-top: 41px;
     }
     .product{
         flex-direction: column;
@@ -632,15 +674,36 @@ a, a:hover{
         max-height: 505px;
         background-size: contain;
     }
+    .min_img{
+        padding-top: 28px;
+    }
     .clothes{
         max-width: 40px;
         max-height: 52px;
+        margin-bottom: 4px;
+    }
+    .inform{
+        margin: 23px auto auto 19px;
+    }
+    .inform_title{
+        height: 92px;
+    }
+    .buy{
+        height: 145px;
     }
     .buy_like{
         flex-direction: column;
+        align-items: flex-start;
     }
-    .about_me{
-        flex-direction: column;
+    .cart_like{
+        margin-top: 15px;
+    }
+    .other_info{
+        height: 96px;
+    }
+    .all{
+        margin-top: 28px;
+        margin-bottom: 55px;
     }
     .all_style{
         display: grid;
@@ -686,7 +749,88 @@ a, a:hover{
     .footer{
         flex-direction: column;
     }
+    .subscription p{
+        width: 279px;
+        letter-spacing: .6px;
+        margin-left: -2px;
+        float: left;
+    }
+    .about_me{
+        margin-top:  5px;
+    }
+    .about{
+        width: 168px;
+        margin-left: 4px;
+    }
     .subscription{
-        max-width: 375px;
+        max-width: 335px;
+        margin-top: 55px;
+    }
+    #form_email{
+        width: 100%;
+        padding: 3px 21px 10px 14px;
+        margin-top: 65px;
+    }
+    #email{
+        letter-spacing: .5px;
+        margin-top: 9px;
+    }
+    .clean{
+        margin-top: -96px;
+    }
+    .sub_btn{
+        margin-top: 24px;
+    }
+    .burger{
+        overflow: visible;
+        width: 24px;
+        height: 13px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .burger span{
+        width: 19px;
+        background-color: #333333;
+        height: 1px;
+    }
+    .burger_active{
+        height: 210px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        padding-left: 30px;
+        padding-bottom: 27px;
+    }
+    .n{
+        display: none;
+    }
+    .up_active{
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        margin-top: 5px;
+    }
+    .down_active{
+        margin-bottom: 6px;
+        transform: rotate(136deg);
+        -webkit-transform: rotate(136deg);
+        -moz-transform: rotate(136deg);
+        -ms-transform: rotate(136deg);
+        -o-transform: rotate(136deg);
+}
+    .burger_hidden{
+        overflow: hidden;
+        width: 0;
+        height: 0;
+    }
+    .burger_active p{
+        font-size: 12px;
+        letter-spacing: .5px;
+        height: 18px;
     }
 }

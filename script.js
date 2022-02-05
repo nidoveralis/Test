@@ -4,7 +4,13 @@ const plus = document.querySelector('.plus');
 const minus = document.querySelector('.minus');
 const countSum = document.querySelector('.sum');
 
-const header = document.querySelector('.wrapper_header');
+const header = document.querySelector('.burger_menu');
+const burger = document.querySelector('.burger');
+const logo = document.querySelector('.logo');
+const btnHeader = document.querySelectorAll('.btn_header');
+const spanUp = document.querySelector('.sp_up')
+const spanDown = document.querySelector('.sp_dw')
+const spanNone = document.querySelector('.sp_n')
 
 const like = document.querySelector('.like');
 const cart = document.querySelector('.cart');
@@ -112,6 +118,16 @@ function validateEmail() {
     if (email == "") {
         erRed.classList.remove('red')
     }
-
-    
 }
+//burger menu
+clickBurger=()=>{
+    header.classList.toggle("burger_active")
+    logo.classList.toggle("burger_hidden")
+    btnHeader.forEach(element=>{
+        element.classList.toggle("burger_hidden")
+    })
+    spanNone.classList.toggle("n")
+    spanUp.classList.toggle("up_active")
+    spanDown.classList.toggle("down_active")
+}
+burger.addEventListener("click",clickBurger)

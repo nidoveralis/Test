@@ -13,14 +13,27 @@
 </head>
 <body>
     <div class="wrapper_header">
+        <div class="conteiner">
             <div class="header">
-                    <p class="logo">LOGO</p>
-                    <div class="header_button">
-                        <img class="btn_header" src="./img/icon/Group.svg" alt="">
-                        <img class="btn_header" src="./img/icon/Group13.svg" alt="">
-                        <img class="btn_header" src="./img/icon/Group14.svg" alt="">
+                <p class="logo">LOGO</p>
+                <div class="header_button">
+                    <img class="btn_header" src="./img/icon/Group.svg" alt="">
+                    <img class="btn_header" src="./img/icon/Group13.svg" alt="">
+                    <img class="btn_header" src="./img/icon/Group14.svg" alt="">
+                    <div class="burger">
+                        <span class="sp_up"></span>
+                        <span class="sp_n"></span>
+                        <span class="sp_dw"></span>
                     </div>
-            </div>
+                </div>
+        </div>
+        <div class="burger_menu">
+            <p>ПОСТЕЛЬНОЕ БЕЛЬЕ</p>
+            <P>ОДЕЖДА ДЛЯ ДОМА</P>
+            <P>ОДЕЖДА ДЛЯ УЛИЦЫ</P>
+            <p>ВЫХОД</p>
+        </div>
+        </div>
     </div>
     <div class="wrapper_product">
             <div class="conteiner">
@@ -85,10 +98,12 @@
                                             <div class="sum">1</div>
                                             <button class="btn minus">-</button>
                                         </div>
-                                        <button class="cart">Добавить в корзину</button>
-                                        <button class="like">
-                                            <img src="img\icon\Groupwhiteheart.svg" alt="">
-                                        </button>
+                                        <div class="cart_like">
+                                            <button class="cart">Добавить в корзину</button>
+                                            <button class="like">
+                                                <img src="img\icon\Groupwhiteheart.svg" alt="">
+                                            </button>
+                                        </div>
                                     </div>
                                     <a href="#">Купить в 1 клик</a>
                                 </div>
@@ -124,7 +139,11 @@
                     </div>
                     <div class="all_style">
                         <div class="all_2 hide">
-                            <img  src="img/122967861.png" alt="">
+                            <picture>
+                                <source media="(max-width:375px )" srcset="img/12296786-1mob.png" type="image/png">
+                                <source media="(min-width:375px )" srcset="img/122967861.png" type="image/png">
+                                <img  src="img/122967861.png" alt="">
+                            </picture>
                             <div class="hover_img">
                                 <img class="icon_page" src="img\icon\page.svg" alt="">
                                 <div class="hover_center">
@@ -152,7 +171,11 @@
                             </div> 
                         </div>
                         <div class="all_4 hide">
-                            <img  src="img/13986707.png" alt="">
+                            <picture>
+                                <source media="(max-width:375px )" srcset="img/13986707mob.png" type="image/png">
+                                <source media="(min-width:375px )" srcset="img/13986707.png" type="image/png">
+                                <img  src="img/13986707.png" alt="">
+                            </picture>
                             <div class="hover_img">
                                 <img class="icon_page" src="img\icon\page.svg" alt="">
                                 <div class="hover_center">
