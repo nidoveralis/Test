@@ -801,6 +801,9 @@ a, a:hover{
         background-color: #333333;
         height: 1px;
     }
+    .burger_menu{
+        transition-duration: 2s;
+    }
     .burger_active{
         height: 210px;
         display: flex;
