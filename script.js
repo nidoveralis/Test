@@ -4,7 +4,8 @@ const plus = document.querySelector('.plus');
 const minus = document.querySelector('.minus');
 const countSum = document.querySelector('.sum');
 
-const header = document.querySelector('.burger_menu');
+const header = document.querySelector('.wrapper_header');
+const burgMenu = document.querySelector('.burger_menu');
 const burger = document.querySelector('.burger');
 const logo = document.querySelector('.logo');
 const btnHeader = document.querySelectorAll('.btn_header');
@@ -121,12 +122,12 @@ function validateEmail() {
 }
 //burger menu
 clickBurger=()=>{
-    header.classList.toggle("burger_active")
+    burgMenu.classList.toggle("burger_active")
     logo.classList.toggle("burger_hidden")
     btnHeader.forEach(element=>{
         element.classList.toggle("burger_hidden")
     })
-    spanNone.classList.toggle("n")
+    spanNone.classList.toggle("none_span")
     spanUp.classList.toggle("up_active")
     spanDown.classList.toggle("down_active")
 }

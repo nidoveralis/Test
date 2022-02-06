@@ -94,14 +94,14 @@ a, a:hover{
     align-items: flex-start;
 }
 .wrapper_img{
-    width: 100%;
+    width: 50%;
     height: 923px;    
 }
 .big_img{
     background-repeat: no-repeat;
     height: 923px;
     max-width: 686px;
-    background-size: cover;
+    background-size: contain;
 }
 .min_img{
     display: flex;
@@ -364,7 +364,7 @@ a, a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 52px;
+    margin-top: 8px;
     margin-bottom: 30px;
 }
 .all_style{
@@ -499,7 +499,7 @@ a, a:hover{
     margin-bottom: 3px;
 }
 .subscription{
-    max-width: 454px;
+    width: 454px;
     height: 170px;
     margin-top: 43px;
 }
@@ -599,16 +599,21 @@ a, a:hover{
     font-size: 14px;
     color: #fd0404;
 }
-
+@media(min-width:1390){
+    .conteiner{
+        max-width: 1230px;
+    }
+}
 @media(max-width:1390px){
     .wrapper-header{
         min-width: 1390px;
     }
     .conteiner{
-        max-width: 1270px;
+        max-width: 1230px;
     }
     .wrapper_img{
         max-width: 686px;
+        max-height: 840px;
     }
     #form_email{
         align-items: center;
@@ -620,11 +625,11 @@ a, a:hover{
     }
     body{
         max-width: 375px;
-        max-height: 2660px;
+        height: 2660px;
         overflow-x: hidden
     }
     .wrapper-header{
-        min-width: 375px;
+        width: 375px;
         min-height: 67px;
         box-shadow: none;
     }
@@ -666,7 +671,7 @@ a, a:hover{
         flex-direction: column;
     }
     .wrapper_img{
-        max-width: 375px;
+        width: 375px;
         max-height: 505px;
     }
     .big_img{
@@ -803,8 +808,9 @@ a, a:hover{
         flex-direction: column;
         padding-left: 30px;
         padding-bottom: 27px;
+        transition-duration: 2s;
     }
-    .n{
+    .none_span{
         display: none;
     }
     .up_active{
