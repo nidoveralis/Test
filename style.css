@@ -628,13 +628,13 @@ a, a:hover{
         height: 2660px;
         overflow-x: hidden
     }
-    .wrapper-header{
-        width: 375px;
+    .wrapper_header{
+        max-width: 375px;
         min-height: 67px;
         box-shadow: none;
     }
     .header{
-        min-width: 375px;
+        width: 375px;
         min-height: 67px;
         margin: 0;
         padding: 0 20px;
@@ -708,7 +708,7 @@ a, a:hover{
     }
     .all{
         margin-top: 28px;
-        margin-bottom: 55px;
+        margin-bottom: 51px;
     }
     .all_style{
         display: grid;
@@ -753,6 +753,7 @@ a, a:hover{
     }
     .footer{
         flex-direction: column;
+        margin-top: 87px;
     }
     .subscription p{
         width: 279px;
