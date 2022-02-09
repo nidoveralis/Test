@@ -599,7 +599,7 @@ a, a:hover{
     font-size: 14px;
     color: #fd0404;
 }
-@media(min-width:1390){
+@media(min-width:1390px){
     .conteiner{
         max-width: 1230px;
     }
@@ -619,22 +619,22 @@ a, a:hover{
         align-items: center;
     }
 }
-@media(max-width:425px){
+@media(max-width: 425px){
     html{
         overflow-x: hidden;
     }
     body{
-        max-width: 375px;
+        max-width: 425px;
         height: 2660px;
         overflow-x: hidden
     }
     .wrapper_header{
-        max-width: 375px;
+        max-width: 425px;
         min-height: 67px;
         box-shadow: none;
     }
     .header{
-        width: 375px;
+        width: 425px;
         min-height: 67px;
         margin: 0;
         padding: 0 20px;
@@ -660,7 +660,7 @@ a, a:hover{
         -o-transition: 2s transform;
     }
     .conteiner{
-        max-width: 375px;
+        max-width: 425px;
         margin: 0;
     }
     .wrapper_product{
@@ -671,11 +671,11 @@ a, a:hover{
         flex-direction: column;
     }
     .wrapper_img{
-        width: 375px;
+        width: 425px;
         max-height: 505px;
     }
     .big_img{
-        max-width: 375px;
+        max-width: 425px;
         max-height: 505px;
         background-size: contain;
     }
