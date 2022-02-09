@@ -619,7 +619,7 @@ a, a:hover{
         align-items: center;
     }
 }
-@media(max-width:375px){
+@media(max-width:425px){
     html{
         overflow-x: hidden;
     }
